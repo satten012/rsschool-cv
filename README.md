@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://github.com/satten012/rsschool-cv/cv
+https://satten012.github.io/rsschool-cv/cv
