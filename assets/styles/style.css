@@ -1,0 +1,248 @@
+/* General rulls */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+}
+
+body{
+    background-color: #313131;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+ul{
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    height: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    width: 25px;
+    font-size: 16px;
+}
+
+li> img{
+    max-width: 25px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.main-contant li:hover{
+    font-size: 20px;
+}
+
+.main-contact > ul li:hover i,
+.main-contact > ul li:hover {
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .5s;
+    line-height: 20px;
+    margin-right: 3px;
+}
+
+.wrapper{
+        width: 850px;
+        min-height: 100vh;
+        background: linear-gradient(133deg, rgba(28,28,28,1) 84%, rgba(201,86,0,1) 100%);
+        color: white;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-left: 45px;
+        padding-bottom: 20px;
+}
+
+.main-content div:nth-child(even) h4 {
+    color: black;
+    font-size: 18px;
+    background-color: rgb(255,222,89);
+    font-weight: 900;
+    letter-spacing: 0.12rem;
+    margin-top: 20px;
+    padding-left: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.main-content div:nth-child(even) p{
+    padding: 0 15px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+
+/* Header rulls */
+
+.header{
+    width: 100%;
+    height: 270px;
+    padding-top: 25px;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-image{
+    height: 230px;
+    border-radius: 50%;
+    border:  thick double rgb(255, 255, 255);
+}
+
+.header-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.header-description{
+    background: rgb(255 222 89);
+    height: 246px;
+    width: 536px;
+    padding: 20px 30px;
+    border-end-start-radius: 20px;
+    color: black;
+    border-start-start-radius: 20px;
+}
+.header-description h1{
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+/* Main rulls  */
+/* main-contact */
+.main-content {
+  display: grid; 
+  grid-auto-flow: row dense; 
+  grid-template-columns: 1fr 2fr; 
+  gap: 0px 0px; 
+
+}
+
+.main-hardSkills ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.main-content div:nth-child(odd) h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(255,222,89);
+    font-weight: 900;
+    letter-spacing: 0.12rem;
+}
+
+.main-hardSkills li {
+    display: flex;
+    align-items: center;
+}
+
+/* main-hardSkills */
+
+.fa-html5{
+    color: #DD4B25;
+}
+.fa-css3-alt{
+    color:#0068BA ;
+}
+
+.fa-square-js{
+    color:#D3B32C ;
+}
+
+.fa-react{
+    color: #00D8FF;
+}
+
+.fa-bootstrap{
+    color: #8A11F6;
+}
+
+.fa-code-pull-request{
+    color: #43AAD6;
+}
+
+.fa-sass{
+    color:#C76494 ;
+}
+
+.fa-comment{
+    color:#70A597 ;
+}
+
+.fa-google{
+    color: #4081EC;
+}
+
+/* main-softSkills  */
+.main-softSkills li, .main-languages li {
+    height: 23px;
+    letter-spacing: 0.03rem;
+}
+
+/* main-workExperience */
+
+.main-workExperience ul li, .main-educationTitle ul li {
+    height: 20px;
+    padding: 0 15px;
+    font-weight: 100;
+}
+
+.main-workExperience ul li:nth-child(odd):not(:last-child) {
+    font-weight: 900;
+    margin-top: 8px;
+}
+
+/* education */
+.main-education{
+    margin-top: 15px;
+}
+
+.main-education ul, .main-courses ul {
+    padding:  0 20px;
+    font-weight: 100;
+}
+
+.main-education  ul li, .main-courses ul li {
+    height: 23px;
+}
+
+.main-education  ul li:nth-child(4), .main-courses ul li:nth-child(3) {
+    margin-top: 10px;
+}
+
+/* main-courses */
+.main-courses h4 {
+    margin-top: 0;
+}
+
+/* main-courses  */
+
+.main-courses{
+    font-weight: 100;
+}
+
+.main-courses ul li:nth-child(odd), .main-courses ul li a {
+    font-weight: 900;
+}
